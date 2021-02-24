@@ -17,9 +17,9 @@ services:
       - 80:80
     working_dir: /opt/okuna-api
     networks:
-      captain-overlay-network
       okuna:
         ipv4_address: 172.16.16.1
+      - captain-overlay-network
     depends_on:
       - db
       - redis
