@@ -14,7 +14,7 @@ services:
       - ./:/opt/okuna-api
       - ./.docker-cache/pip:/root/.cache/pip
     ports:
-      - 80:9980
+      - 9980:80
     working_dir: /opt/okuna-api
     networks:
       okuna:
