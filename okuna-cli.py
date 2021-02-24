@@ -301,7 +301,7 @@ def up_full():
     subprocess.run(["docker-compose", "-f", "docker-compose-full.yml", "up", "-d", "-V"])
 
     okuna_api_address = '127.0.0.1'
-    okuna_api_port = 80
+    okuna_api_port = 9980
 
     _wait_until_api_is_running(address=okuna_api_address, port=okuna_api_port)
 
