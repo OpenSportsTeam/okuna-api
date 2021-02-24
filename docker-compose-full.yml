@@ -17,9 +17,7 @@ services:
       - 80:80
     working_dir: /opt/okuna-api
     networks:
-      default:
-        external:
-          name: captain-overlay-network
+      captain-overlay-network
       okuna:
         ipv4_address: 172.16.16.1
     depends_on:
@@ -41,9 +39,6 @@ services:
       - ./.docker-cache/pip:/root/.cache/pip
     working_dir: /opt/okuna-api
     networks:
-      default:
-        external:
-          name: captain-overlay-network
       okuna:
         ipv4_address: 172.16.16.2
     depends_on:
