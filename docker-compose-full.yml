@@ -19,7 +19,6 @@ services:
     networks:
       okuna:
         ipv4_address: 172.16.16.1
-      - captain-overlay-network
     depends_on:
       - db
       - redis
